@@ -76,6 +76,8 @@ Para incluir o E2E fundamental na mesma execucao:
 RUN_E2E=1 bash tools/codespaces/start-demo.sh
 ```
 
+Para apresentacao normal, comece sem `RUN_E2E=1`. Use E2E completo quando quiser provar engenharia, nao quando a pessoa quer apenas ver o fluxo operacional.
+
 ## abrir a interface
 
 O script imprime as URLs previstas:
@@ -87,6 +89,8 @@ O script imprime as URLs previstas:
 Para demonstracao externa, torne publicas temporariamente as portas `4200` e `8000` na aba `PORTS` do Codespaces. Se precisar de tempo real/socket na demonstracao, torne tambem a porta `38000` publica.
 
 Ao terminar, volte as portas para `private` ou delete o Codespace.
+
+Depois de abrir a interface, siga o roteiro em [demo-local-portfolio.md](demo-local-portfolio.md). O roteiro vale tambem para Codespaces.
 
 ## credenciais
 

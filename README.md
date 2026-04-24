@@ -1,12 +1,12 @@
-# Rota Pulse Baseline
+# Rota Pulse - Demo de Transporte e Roteirizacao
 
-Demo reproduzivel de planejamento operacional e roteirizacao sobre o baseline open source Fleetbase/FleetOps, com execucao local ou sob demanda no GitHub Codespaces.
+Demo reproduzivel de planejamento operacional e roteirizacao sobre Fleetbase/FleetOps, com execucao local ou sob demanda no GitHub Codespaces.
 
-Este repositorio existe para portfolio e aprendizado aplicado: demonstrar uma operacao simples de transporte usando Fleetbase/FleetOps, com disciplina de engenharia suficiente para outra pessoa clonar, subir, semear dados e validar o fluxo principal.
+Este repositorio existe para portfolio e aprendizado aplicado. O objetivo nao e vender um TMS proprietario nem competir com o Fleetbase. O objetivo e demonstrar capacidade de configurar, operar, analisar e explicar uma operacao simples de transporte usando uma base open source real.
 
 ## Tese
 
-Rota Pulse nao e uma plataforma paralela ao Fleetbase. E uma camada local, controlada e documentada para mostrar competencia em:
+Rota Pulse e uma demo tecnica-operacional para mostrar competencia em:
 
 - planejamento operacional;
 - roteirizacao assistida;
@@ -15,19 +15,51 @@ Rota Pulse nao e uma plataforma paralela ao Fleetbase. E uma camada local, contr
 - operacao reprodutivel sem custo recorrente obrigatorio;
 - demonstracao web sob demanda sem manter ambiente 24/7.
 
+Frase curta para apresentacao:
+
+```text
+Eu montei uma demo reproduzivel sobre Fleetbase/FleetOps para simular uma operacao urbana de entregas, organizar pedidos, motoristas e veiculos, acompanhar execucao e demonstrar raciocinio analitico aplicado a transporte e roteirizacao.
+```
+
+## O que eu fiz
+
+| camada | responsabilidade |
+|---|---|
+| Fleetbase/FleetOps | produto open source base: console, API, pedidos, recursos, mapa e operacao |
+| Rota Pulse | reproducao, seed do case Brasil, roteiro de demo, testes fundamentais e documentacao de portfolio |
+| Analise | leitura operacional do fluxo, riscos, limites e proximas decisoes de transporte |
+
+Essa separacao e intencional: o valor do portfolio esta em demonstrar criterio operacional e dominio tecnico suficiente para usar bem uma ferramenta real, nao em fingir que todo o produto foi criado do zero.
+
 ## Demo em 3 blocos
 
 | bloco | prova |
 |---|---|
-| Planejamento operacional | criar ou consultar pedido, capacidade, motorista, veiculo e agenda |
-| Roteirizacao assistida | usar mapa/rotas do FleetOps como apoio visual, sem prometer motor proprio |
-| Leitura analitica | explicar risco, capacidade e proximo ajuste como Analista de Transporte |
+| 1. Planejamento operacional | pedido, origem, destino, motorista, veiculo e agenda existem |
+| 2. Roteirizacao assistida | mapa/rotas apoiam a leitura da execucao, sem prometer motor proprietario |
+| 3. Analise e decisao | risco, capacidade e proximo ajuste sao explicados como Analista de Transporte |
 
-Roteiro: [docs/operacao/demo-local-portfolio.md](docs/operacao/demo-local-portfolio.md)
+Roteiro de apresentacao: [docs/operacao/demo-local-portfolio.md](docs/operacao/demo-local-portfolio.md)
 
 Case Brasil: [docs/produto/case-brasil-planejamento-roteirizacao.md](docs/produto/case-brasil-planejamento-roteirizacao.md)
 
-## Como rodar
+## Para avaliar rapido
+
+Se voce tem pouco tempo:
+
+1. Leia a tese acima.
+2. Leia o [case Brasil](docs/produto/case-brasil-planejamento-roteirizacao.md).
+3. Leia o roteiro em 3 blocos em [demo-local-portfolio.md](docs/operacao/demo-local-portfolio.md).
+
+Se voce quer reproduzir:
+
+1. Abra um Codespace sob demanda.
+2. Rode `bash tools/codespaces/start-demo.sh`.
+3. Abra o console Fleetbase/FleetOps.
+4. Use o roteiro de apresentacao.
+5. Pare ou delete o Codespace ao final.
+
+## Como rodar a demo
 
 ### Codespaces sob demanda
 
@@ -120,6 +152,22 @@ Mapa completo: [docs/arquitetura/mapa-do-repositorio.md](docs/arquitetura/mapa-d
 - cobertura E2E exaustiva de todo o upstream.
 
 Esses temas so voltam com tarefa explicita, custo aceito e prova objetiva de necessidade.
+
+## Como falar sobre o projeto
+
+Use:
+
+```text
+E uma demo reproduzivel de planejamento operacional e roteirizacao assistida, construida sobre Fleetbase/FleetOps, para demonstrar raciocinio aplicado a transporte.
+```
+
+Evite:
+
+```text
+Eu criei um TMS completo do zero.
+```
+
+Essa segunda frase cria uma promessa errada. A primeira e honesta, profissional e mais forte para portfolio.
 
 ## Publicacao
 

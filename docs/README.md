@@ -6,8 +6,8 @@ Documentacao local derivada do Rota Pulse. Ela explica como usar este repositori
 
 1. [Produto](produto/visao-do-produto.md)
 2. [Case Brasil](produto/case-brasil-planejamento-roteirizacao.md)
-3. [Demo Codespaces](operacao/demo-codespaces.md)
-4. [Demo local](operacao/demo-local-portfolio.md)
+3. [Roteiro da demo em 3 blocos](operacao/demo-local-portfolio.md)
+4. [Demo Codespaces](operacao/demo-codespaces.md)
 5. [Ambiente local](operacao/ambiente-local.md)
 6. [Testes](engenharia/estrategia-de-testes.md)
 
@@ -24,8 +24,8 @@ Documentacao local derivada do Rota Pulse. Ela explica como usar este repositori
 - [produto/visao-do-produto.md](produto/visao-do-produto.md)
 - [produto/escopo-do-mvp.md](produto/escopo-do-mvp.md)
 - [produto/case-brasil-planejamento-roteirizacao.md](produto/case-brasil-planejamento-roteirizacao.md)
-- [operacao/demo-codespaces.md](operacao/demo-codespaces.md)
 - [operacao/demo-local-portfolio.md](operacao/demo-local-portfolio.md)
+- [operacao/demo-codespaces.md](operacao/demo-codespaces.md)
 - [operacao/ambiente-local.md](operacao/ambiente-local.md)
 - [operacao/acessos-para-teste.md](operacao/acessos-para-teste.md)
 - [operacao/refresh-upstream.md](operacao/refresh-upstream.md)

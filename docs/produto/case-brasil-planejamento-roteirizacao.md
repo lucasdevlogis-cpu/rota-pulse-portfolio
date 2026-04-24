@@ -47,6 +47,40 @@ O comando cria ou reutiliza os dados no runtime local. A ordem retornada no cons
 5. O mapa/rotas apoiam a leitura operacional.
 6. A recomendacao do analista e revisar janela, capacidade e agrupamento regional antes de escalar volume.
 
+## leitura do analista
+
+Durante a apresentacao, a parte mais importante nao e mostrar todas as telas. A parte mais importante e explicar a decisao.
+
+Leitura recomendada:
+
+| ponto | leitura |
+|---|---|
+| demanda | existe um pedido com origem, destino e status operacional |
+| capacidade | existe motorista e veiculo associados, mas a demo nao simula frota em escala |
+| agenda | existe horario planejado, suficiente para demonstrar controle operacional |
+| geografia | origem em Guarulhos e destino em Vila Olimpia criam uma leitura urbana plausivel |
+| risco | janela, trafego, qualidade do endereco e disponibilidade real do recurso ainda precisariam ser controlados |
+| decisao | antes de aumentar volume, revisar enderecos, agrupar entregas por regiao e definir capacidade por faixa horaria |
+
+## indicadores que eu observaria
+
+Estes indicadores nao precisam estar todos automatizados na demo. Eles mostram raciocinio profissional para evolucao futura:
+
+| indicador | por que importa |
+|---|---|
+| pedidos planejados vs. nao planejados | mede disciplina operacional |
+| pedidos sem motorista ou veiculo | mostra gargalo de capacidade |
+| entregas por regiao | apoia agrupamento e roteirizacao |
+| janela planejada vs. janela real | mostra risco de atraso |
+| distancia ou tempo estimado | apoia custo e produtividade |
+| replanejamentos | indica qualidade do planejamento inicial |
+
+## fala final sugerida
+
+```text
+O fluxo demonstra uma operacao minima pronta: pedido, origem, destino, motorista, veiculo e agenda. Como analista, eu nao escalaria volume antes de revisar qualidade de enderecos, janelas de atendimento e agrupamento regional. A ferramenta serve como base operacional; a decisao vem da leitura dos dados.
+```
+
 ## leitura analitica esperada
 
 ```text

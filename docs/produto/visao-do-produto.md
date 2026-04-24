@@ -2,11 +2,20 @@
 
 ## frase de produto
 
-Rota Pulse e uma demo de planejamento operacional e roteirizacao assistida para portfolio de Analista de Transporte, construida sobre Fleetbase/FleetOps.
+Rota Pulse e uma demo reproduzivel de planejamento operacional e roteirizacao assistida para portfolio de Analista de Transporte, construida sobre Fleetbase/FleetOps.
 
 ## problema demonstrado
 
-Um analista precisa organizar demanda, capacidade, agenda e leitura de rota sem construir um TMS do zero. O repositorio prova esse fluxo com software open source, seed reproduzivel e smoke E2E fundamental.
+Um analista precisa organizar demanda, capacidade, agenda e leitura de rota sem construir um TMS do zero. O repositorio prova esse fluxo com software open source, seed reproduzivel, smoke funcional e roteiro de apresentacao.
+
+O problema nao e tecnico apenas. A demonstracao precisa responder:
+
+- qual demanda existe;
+- qual recurso atende;
+- quando a execucao esta planejada;
+- que leitura geografica ajuda a decisao;
+- qual risco operacional o analista enxerga;
+- qual ajuste deve ser priorizado antes de escalar volume.
 
 ## publico
 
@@ -20,6 +29,16 @@ Um analista precisa organizar demanda, capacidade, agenda e leitura de rota sem 
 - demonstrar pedido, motorista, veiculo, agenda e mapa operacional;
 - separar o que e Fleetbase/FleetOps nativo do que e camada local Rota Pulse;
 - evitar promessa de otimizacao proprietaria, app mobile ou ambiente permanente antes de necessidade real.
+
+## posicionamento honesto
+
+Rota Pulse nao deve ser apresentado como TMS proprietario completo. A apresentacao correta e:
+
+```text
+Uma demo tecnica-operacional sobre Fleetbase/FleetOps para mostrar dominio de transporte, organizacao de operacao e leitura analitica.
+```
+
+O valor profissional esta em configurar, reproduzir, validar e explicar a operacao. Isso e mais defensavel do que tentar vender uma plataforma nova sem necessidade.
 
 ## blocos da demo
 
