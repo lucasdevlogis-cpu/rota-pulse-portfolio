@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">Rota Pulse validation logo</title>
+  <desc id="desc">Minimal Rota Pulse logo asset used to validate native Fleetbase branding.</desc>
+  <rect width="720" height="180" rx="24" fill="#0b1220"/>
+  <g transform="translate(48 42)">
+    <circle cx="48" cy="48" r="44" fill="#14b8a6"/>
+    <path d="M28 52h40c10 0 18-8 18-18S78 16 68 16H28v72h18V62h13l18 26h21L78 58c16-6 26-18 26-34 0-24-17-40-42-40H10v104h18V52zm18-16V0h20c12 0 20 7 20 18s-8 18-20 18H46z" fill="#0b1220" transform="scale(.78) translate(24 22)"/>
+  </g>
+  <text x="158" y="86" fill="#f8fafc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="700">Rota Pulse</text>
+  <text x="160" y="126" fill="#94a3b8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="500">Operacoes logisticas em tempo real</text>
+</svg>

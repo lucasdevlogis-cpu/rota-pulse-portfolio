@@ -1,0 +1,14 @@
+# upstream.lock - pinagem explicita dos repositórios upstream usados pelo baseline
+
+pinned_at: "2026-04-10"
+
+repos:
+  fleetbase:
+    url: https://github.com/fleetbase/fleetbase.git
+    ref: 889b945650d07e87776c66af54d1c43a6fb843ce
+    path: .upstream/fleetbase
+
+  fleetops:
+    url: https://github.com/fleetbase/fleetops.git
+    ref: 4c46b3b41b459fb77192154d4c71067b21d33cb5
+    path: .upstream/fleetops

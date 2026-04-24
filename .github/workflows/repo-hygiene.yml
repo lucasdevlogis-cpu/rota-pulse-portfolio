@@ -1,0 +1,37 @@
+name: repo-hygiene
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static:
+    name: static
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate root files
+        run: |
+          test -f README.md
+          test -f Makefile
+          test -f upstream.lock
+          test -f .devcontainer/devcontainer.json
+
+      - name: Validate JSON
+        run: python -m json.tool .devcontainer/devcontainer.json > /dev/null
+
+      - name: Publication safety
+        shell: pwsh
+        run: ./tools/security/check-publication-safety.ps1
+
+      - name: Diff hygiene
+        run: git diff --check

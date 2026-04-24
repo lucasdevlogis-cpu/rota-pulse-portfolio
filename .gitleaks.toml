@@ -1,0 +1,15 @@
+# Local agent-browser Chrome profile and artifacts can trigger false positives
+# (Preferences, Secure Preferences, etc.) when running gitleaks with --no-git.
+# CI scans the committed tree only; this file still documents safe exclusions.
+
+title = "Rota Pulse Baseline"
+
+[extend]
+useDefault = true
+
+[allowlist]
+paths = [
+  '''\.cache/agent-browser/''',
+  '''\.artifacts/agent-browser/''',
+  '''\.upstream/''',
+]

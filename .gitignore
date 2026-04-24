@@ -1,0 +1,45 @@
+# Upstream mirrors managed by tools/sync
+.upstream/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!tests/e2e/.env.example
+*.env.local
+rota-pulse-secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*service-account*.json
+*gcp-credentials*.json
+
+# IDE and local state
+.vscode/
+.idea/
+.cursor/
+__comandos.md
+
+# Operating system noise
+.DS_Store
+Thumbs.db
+
+# Runtime dependencies and build output
+node_modules/
+vendor/
+.cache/
+*.log
+*.sock
+tests/e2e/.playwright-cli/
+tests/e2e/output/
+tests/e2e/playwright-report/
+tests/e2e/test-results/
+
+# Docker and local overrides
+docker-compose.override.yml
+
+# Scratch and backups
+.tmp-tools/
+.backups/
+.artifacts/

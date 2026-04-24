@@ -1,0 +1,39 @@
+{
+  "name": "Rota Pulse Codespaces Demo",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/powershell:1": {}
+  },
+  "forwardPorts": [4200, 8000, 38000],
+  "portsAttributes": {
+    "4200": {
+      "label": "Fleetbase Console",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    },
+    "8000": {
+      "label": "Fleetbase API",
+      "onAutoForward": "silent",
+      "visibility": "private"
+    },
+    "38000": {
+      "label": "SocketCluster",
+      "onAutoForward": "silent",
+      "visibility": "private"
+    }
+  },
+  "postAttachCommand": "bash tools/codespaces/print-demo-urls.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}

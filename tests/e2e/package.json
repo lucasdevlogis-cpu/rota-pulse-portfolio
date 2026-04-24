@@ -1,0 +1,21 @@
+{
+  "name": "rota-pulse-e2e",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Harness E2E isolado da camada Rota Pulse",
+  "scripts": {
+    "install:browsers": "playwright install",
+    "test": "playwright test",
+    "smoke": "playwright test specs/operations-smoke.spec.js specs/orders-critical-flow.spec.js specs/scheduler-critical-read.spec.js specs/management-critical-read.spec.js --project=chromium --workers=1",
+    "smoke:all": "playwright test --project=chromium --workers=1",
+    "test:support": "playwright test specs/routes-critical-read.spec.js specs/service-rates-critical-read.spec.js specs/places-critical-read.spec.js specs/fleets-critical-read.spec.js specs/zones-critical-read.spec.js --project=chromium --workers=1",
+    "test:routes": "playwright test specs/routes-critical-read.spec.js --project=chromium",
+    "test:access": "playwright test specs/access-profiles.spec.js --project=chromium --workers=1",
+    "test:list": "playwright test --list",
+    "report": "playwright show-report ./output/playwright/report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.59.1",
+    "dotenv": "17.2.3"
+  }
+}
